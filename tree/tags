@@ -1,0 +1,39 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ADD	test.c	12;"	d	file:
+ADD	test.c	187;"	d	file:
+AddNode	tree.c	/^Node* AddNode(Node* tree, int val) {$/;"	f
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -Wall -Werror -fprofile-arcs -ftest-coverage -MMD$/;"	m
+CheckMalloc	test.c	/^int CheckMalloc() {$/;"	f
+CheckPrint	test.c	/^int CheckPrint(Node* tree) {        \/\/ -7 0 5 15 45 90 99 100 150$/;"	f
+FindElement	tree.c	/^int FindElement(Node* tree, int val) {$/;"	f
+IN_ORDER	tree.h	/^    IN_ORDER,$/;"	e	enum:TRAVERSAL_ORDER
+LDFLAGS	Makefile	/^LDFLAGS = -fprofile-arcs -ftest-coverage$/;"	m
+MaxOdd	test.c	/^void MaxOdd(Node* node, void* max) {$/;"	f
+Node	tree.h	/^typedef struct TreeNode Node;$/;"	t	typeref:struct:TreeNode
+NodesDump	tree.c	/^int NodesDump(Node* tree, FILE* file) {$/;"	f
+POST_ORDER	tree.h	/^    POST_ORDER$/;"	e	enum:TRAVERSAL_ORDER
+PRE_ORDER	tree.h	/^    PRE_ORDER,$/;"	e	enum:TRAVERSAL_ORDER
+TEST	test.c	32;"	d	file:
+TRAVERSAL_ORDER	tree.h	/^enum TRAVERSAL_ORDER {$/;"	g
+TestAddNode	test.c	/^int TestAddNode(void) {$/;"	f
+TestFindElement	test.c	/^int TestFindElement(void) {$/;"	f
+TestTreeCtor	test.c	/^int TestTreeCtor(void) {$/;"	f
+TestVisitor	test.c	/^int TestVisitor(void) {$/;"	f
+TreeCtor	tree.c	/^Node* TreeCtor(int val) {$/;"	f
+TreeDtor	tree.c	/^void TreeDtor(Node* tree) {$/;"	f
+TreeDump	tree.c	/^int TreeDump(Node* tree, const char* pathname) {$/;"	f
+TreeNode	tree.h	/^struct TreeNode {$/;"	s
+VISITOR	test.c	188;"	d	file:
+VISITOR	test.c	22;"	d	file:
+Visitor	tree.c	/^int Visitor(Node* tree, enum TRAVERSAL_ORDER order, void (*func)(Node* node, void* ctx), void* ctx) {$/;"	f
+data	tree.h	/^    int data;$/;"	m	struct:TreeNode
+left	tree.h	/^    struct TreeNode* left;$/;"	m	struct:TreeNode	typeref:struct:TreeNode::TreeNode
+main	test.c	/^int main() {$/;"	f
+right	tree.h	/^    struct TreeNode* right;$/;"	m	struct:TreeNode	typeref:struct:TreeNode::TreeNode
+unit_test	test.c	/^int unit_test(void) {$/;"	f
